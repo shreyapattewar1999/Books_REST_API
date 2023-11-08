@@ -8,5 +8,5 @@ import com.api.book.entities.Book;
 
 public interface BookRepository  extends CrudRepository<Book, String> {
 	
-	public Book  findByBookId(String bookId);
+	public Book findByBookId(String bookId);
 }

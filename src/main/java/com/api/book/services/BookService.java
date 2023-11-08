@@ -12,7 +12,7 @@ import com.api.book.repositories.BookRepository;
 
 @Service
 public class BookService {
-	
+
 	@Autowired
 	public BookRepository bookRepository;
 
@@ -24,35 +24,33 @@ public class BookService {
 //		booksList.add(new Book("36", "Do Epic Shit", "Ankoor Warikoo"));
 //		
 //	}
-	
-	public List<Book> getBooks(){
+
+	public List<Book> getBooks() {
 		List<Book> books = (List<Book>) bookRepository.findAll();
 		return books;
 	}
-	
+
 	public Book getBookById(String incomingBookId) {
 		try {
-		Book newBook=null;
+			Book newBook = null;
 //		newBook= booksList.stream().filter(b->b.getBookId().equals(incomingBookId)).findFirst().orElse(null);
-		newBook = bookRepository.findByBookId(incomingBookId);
-		return newBook;
-		}
-		catch(Exception e){
+			newBook = bookRepository.findByBookId(incomingBookId);
+			return newBook;
+		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}
 	}
-	
+
 	public void addNewBook(Book incomingBook) {
 		try {
 //		booksList.add(incomingBook);
-		 bookRepository.save(incomingBook);
-		}
-		catch(Exception e) {
+			bookRepository.save(incomingBook);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void updateBook(Book bookData, String bookId) {
 //		booksList.forEach(b->{
 //			if(b.getBookId().equals(bookId)) {
@@ -61,18 +59,26 @@ public class BookService {
 //				b.setAuthor(bookData.getAuthor());
 //			}
 //		});
-		
+
 //		.save() --> if incoming book data's ID is not available in books table, new book is saved, 
 //		if incoming book's ID is present in books table, then it updates existing row
 		bookRepository.save(bookData);
-		
+
 	}
-	
-	public List<Book> deleteBook(String bookId){
+
+	public List<Book> deleteBook(String bookId) {
 		bookRepository.deleteById(bookId);
 		List<Book> updatedBooks = (List<Book>) bookRepository.findAll();
 //		booksList = booksList.stream().filter(b-> ! b.getBookId().equals(bookId)).collect(Collectors.toList());
 		return updatedBooks;
 	}
-	
+
+	public List<Book> updateBookName(String bookId, String bookName) {
+		Book bookToBeUpdated = bookRepository.findByBookId(bookId);
+		bookToBeUpdated.setTitle(bookName);
+		bookRepository.save(bookToBeUpdated);
+
+		List<Book> updatedBooks = (List<Book>) bookRepository.findAll();
+		return updatedBooks;
+	}
 }

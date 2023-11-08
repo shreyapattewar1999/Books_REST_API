@@ -1,0 +1,43 @@
+pom.xml file 
+spring-boot-starter-data-jpa --> dependency to connect Spring application with relational database efficiently. The spring-boot-starter-data-jpa internally uses the spring-boot-jpa dependency (since Spring Boot version 1.5.3).
+
+mysql-connector-j --> The MySQL connector java is a JDBC driver provided by MySQL and you must include it in your Java app, if you want your app to talk to a MySQL database. (JDBC is a standard API in Java to communicate with a SQL database and each type of database has its own driver that knows how to communicate with the database)
+
+spring-boot-starter-web --> is used for building RESTful applications using Spring MVC. Spring Boot Starter Tomcat is the default embedded container for Spring Boot Starter Web.
+
+
+spring-boot-devtools --> includes an embedded LiveReload server that is used to trigger a browser refresh when a resource is changed. Whenever we update file, application automatically refreshes or reloads with updated changes
+
+spring-boot-starter-test --> primary starter dependency for testing our spring boot application. It contains the majority of libraries that are required for tests including JUnit Jupiter, Hamcrest, and Mockito.
+
+
+
+
+
+This application starts from Bootjpaexample1Application.java class
+BookController.java class has all rest api defined
+To provide abstraction, core functionality is handled by BookService.java file
+BookService class is annotated with @Service, so that this service gets registered in Spring IOC Container
+BookService class is used in BookController class using @Autowired annotation that is using Dependency injection
+BookService class has all functions that to be executed on BookRepository
+BookRepository class extends CrudRepository<Book, String> (String since bookId in Book class is of String type)
+CrudRepository<T, ID>:
+T: Domain type that repository manages (Generally the Entity/Model class name)
+ID: Type of the id of the entity that repository manages (Generally the wrapper class of your @Id that is created inside the Entity/Model class)
+
+
+For CRUD Repository Read : https://www.concretepage.com/spring-boot/spring-boot-crudrepository-example
+
+Book.java --> this acts as Book Entity which refers to table in database(books)
+Book class is annotated with @Entity and @Table 
+Book class has all properties of book and getters and setters mentioned
+Each entity must have at least two annotations defined: @Entity and @Id. The @Entity annotation specifies that the class is an entity and is mapped to a database table. The @Table annotation specifies the name of the database table to be used for mapping. The @Id annotation specifies the primary key of an entity and the @GeneratedValue provides for the specification of generation strategies for the values of primary keys.
+
+
+The @Table annotation allows you to specify the details of the table that will be used to persist the entity in the database. The @Table annotation provides four attributes, allowing you to override the name of the table, its catalog, and its schema, and enforce unique constraints on columns in the table. 
+
+
+.save() --> if incoming book data's ID is not available in books table, new book is saved, if incoming book's ID is present in books table, then it updates existing row
+
+ResponseEntity --> https://www.baeldung.com/spring-response-entity
+RequestBody and ResponseBody --> https://www.baeldung.com/spring-request-response-body

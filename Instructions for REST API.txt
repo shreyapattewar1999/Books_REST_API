@@ -1,0 +1,26 @@
+
+Java lambda expression
+Content Negotiation connection library
+Custom Error Handling --> transforming errors and passing response with body with validation 
+If request is in XML and then response should be XML
+If request is in JSON and then response should be JSON
+Add loggers----> Log4J, SLF4Log or LOG5J
+Add Testcases --> for code coverage 
+
+https://www.springboottutorial.com/spring-boot-content-negotiation-with-xml-json-representations
+
+
+
+Side by side complete course of Spring boot
+
+(API for SOAP--> XML)
+
+
+Practice standards
+Follow standards for naming
+Commit versions with features
+Add Comments 
+Add Loggers
+In future
+Add front end using angular
+Add authentication
