@@ -5,6 +5,9 @@ import java.util.List;
 //import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.api.book.entities.Book;
@@ -45,6 +48,7 @@ public class BookService {
 	public void addNewBook(Book incomingBook) {
 		try {
 //		booksList.add(incomingBook);
+//			Book newBook = new Book(incom)
 			bookRepository.save(incomingBook);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -80,5 +84,19 @@ public class BookService {
 
 		List<Book> updatedBooks = (List<Book>) bookRepository.findAll();
 		return updatedBooks;
+	}
+
+	public List<Book> getBooksListByAuthorName(String authorName) {
+		return this.bookRepository.findBooksByAuthorName(authorName);
+	}
+
+	public List<Book> getBooksByPageNumber(int pageNo, int pageSize) {
+		Pageable pageable = PageRequest.of(pageNo - 1, pageSize);
+		return bookRepository.findAll(pageable).getContent();
+	}
+
+	public List<Book> getRecordsInSortedOrder(String sortOrder, String fieldName) {
+		Sort sort = Sort.by((sortOrder.equals("asc")) ? Sort.Direction.ASC : Sort.Direction.DESC, fieldName);
+		return bookRepository.findAll(sort);
 	}
 }

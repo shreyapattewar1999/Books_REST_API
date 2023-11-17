@@ -3,6 +3,8 @@ package com.api.book.controller;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,8 @@ import com.api.book.services.BookService;
 @RestController
 public class BookController {
 
+	Logger logger = LoggerFactory.getLogger(BookController.class);
+
 	@Autowired
 	private BookService bookService;
 
@@ -31,7 +35,9 @@ public class BookController {
 	@GetMapping("/books")
 	public ResponseEntity<List<Book>> getBooks() {
 		List<Book> books = bookService.getBooks();
-		System.out.println("request received");
+		logger.info("getAll request received");
+		logger.debug("getAll request received DEBUG");
+
 		if (books.size() == 0) {
 			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 		}
@@ -78,4 +84,22 @@ public class BookController {
 		return updatedBooks;
 	}
 
+	@GetMapping("/books/getBooksByAuthorName/{authorName}")
+	public List<Book> getBooksByAuthorName(@PathVariable("authorName") String authorName) {
+		List<Book> books = this.bookService.getBooksListByAuthorName(authorName);
+		return books;
+	}
+
+	@GetMapping("/books/getBooksByPageNumber")
+	public List<Book> getBooksByPagination(@RequestParam int pageNo, @RequestParam int pageSize) {
+		List<Book> books = this.bookService.getBooksByPageNumber(pageNo, pageSize);
+		return books;
+	}
+
+	@GetMapping("/books/getRecordsInSortedOrder")
+	public List<Book> getRecordsInSortedOrder(@RequestParam(defaultValue = "bookId") String fieldName,
+			@RequestParam(defaultValue = "asc") String sortOrder) {
+		List<Book> books = this.bookService.getRecordsInSortedOrder(sortOrder, fieldName);
+		return books;
+	}
 }

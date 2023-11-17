@@ -4,6 +4,7 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
@@ -19,6 +20,7 @@ public class Book {
 	private String title;
 
 	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(referencedColumnName = "authorId")
 	private Author author;
 //	here book has author id as foreign key, hence we can fetch author details via book object
 //	however we can't fetch book details from author 
