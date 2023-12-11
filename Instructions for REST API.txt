@@ -24,3 +24,6 @@ Add Loggers
 In future
 Add front end using angular
 Add authentication
+Junit for controller class
+Lambda Expression
+Java Collection

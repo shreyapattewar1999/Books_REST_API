@@ -1,24 +1,53 @@
 package com.api.book.entities;
 
+import java.util.List;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "books")
+@Getter
+@Setter
+@ToString
 public class Book {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "bookId")
-	private String bookId;
+	private int bookId;
 
 	@Column(name = "title")
 	private String title;
 
+	private String publishedYear;
+
+	private List<String> languages;
+
+	private String publisher;
+
+	private String genre;
+
+	private String description;
+
+	private float rating;
+
+	private int noOfPages;
+
+	private int noOfCopies;
+
+	private float reviews = 0;
+	private float ratings = 0;
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(referencedColumnName = "authorId")
 	private Author author;
@@ -30,40 +59,19 @@ public class Book {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Book(String bookId, String title, Author author) {
+	public Book(String title, String publishedYear, List<String> languages, String publisher, String genre,
+			String description, float rating, int noOfPages, int noOfCopies, Author author) {
 		super();
-		this.bookId = bookId;
 		this.title = title;
+		this.publishedYear = publishedYear;
+		this.languages = languages;
+		this.publisher = publisher;
+		this.genre = genre;
+		this.description = description;
+		this.rating = rating;
+		this.noOfPages = noOfPages;
 		this.author = author;
-	}
-
-	@Override
-	public String toString() {
-		return "Book [bookId=" + bookId + ", title=" + title + ", author=" + author + "]";
-	}
-
-	public String getBookId() {
-		return bookId;
-	}
-
-	public void setBookId(String bookId) {
-		this.bookId = bookId;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public Author getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(Author author) {
-		this.author = author;
+		this.noOfCopies = noOfCopies;
 	}
 
 }

@@ -73,3 +73,24 @@ By default in springboot application Info logging level is enabled that means Er
 Since Error and Warn are below in the hierarchy of logging levels
 If we change logging level to Trace, then all Error, Warn, Info and Debug along with Trace will be enabled
 <springboot-starter-web> dependency adds logback-classic, logback-core, log4-to-self4j, log4j-api
+
+logging.level.com.api.book=debug --> at book level, we have added debug logging level
+logging.file.name=app.log --> to store all logs in app.log file
+
+
+@Query annotation is used in JPARepository to write JPQL query
+
+@Modifying and @Transactional annotation is required when we are updating/modifying table 
+@Transactional annotation to be imported from spring framework
+
+When function is annotated with @Modifying, then function return type should be void or Integer only, other return types are not allowed
+
+
+By default, Eager loading is enabled
+
+
+
+
+
+Book Entity
+Author Entity

@@ -19,12 +19,12 @@ public class AuthorService {
 	public AddressRepository addressRepository;
 
 	public void addAuthor(AuthorCreateRequest authorRequestObject) {
-
-		Author author = new Author(authorRequestObject.getAuthorFirstName(), authorRequestObject.getAuthorLastName());
-
 		Address address = new Address(authorRequestObject.getStreet(), authorRequestObject.getDistrict(),
 				authorRequestObject.getState(), authorRequestObject.getPostalCode(), authorRequestObject.getEmail(),
 				authorRequestObject.getContactNo());
+
+		Author author = new Author(authorRequestObject.getAuthorFirstName(), authorRequestObject.getAuthorLastName(),
+				address);
 
 		address = addressRepository.save(address);
 

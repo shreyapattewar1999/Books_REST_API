@@ -1,167 +1,273 @@
-2023-11-17T15:31:09.632+05:30  INFO 22792 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 22792 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
-2023-11-17T15:31:09.633+05:30 DEBUG 22792 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
-2023-11-17T15:31:09.634+05:30  INFO 22792 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
-2023-11-17T15:31:10.025+05:30  INFO 22792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-17T15:31:10.065+05:30  INFO 22792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
-2023-11-17T15:31:10.206+05:30  INFO 22792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-17T15:31:10.207+05:30  INFO 22792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-17T15:31:10.207+05:30  INFO 22792 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-17T15:31:10.256+05:30  INFO 22792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-11-17T15:31:10.257+05:30  INFO 22792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 618 ms
-2023-11-17T15:31:10.279+05:30  INFO 22792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
-2023-11-17T15:31:10.306+05:30  INFO 22792 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a93e044
-2023-11-17T15:31:10.306+05:30  INFO 22792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
-2023-11-17T15:31:10.307+05:30  INFO 22792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
-2023-11-17T15:31:10.350+05:30  INFO 22792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-17T15:31:10.367+05:30  INFO 22792 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T15:31:10.368+05:30  INFO 22792 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-17T15:31:10.371+05:30  WARN 22792 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-11-17T15:31:10.410+05:30  INFO 22792 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T15:31:10.520+05:30  INFO 22792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-11-17T15:31:10.593+05:30  INFO 22792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-17T15:31:10.809+05:30  WARN 22792 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-17T15:31:10.986+05:30  INFO 22792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-11-17T15:31:11.015+05:30  INFO 22792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-17T15:31:11.023+05:30  INFO 22792 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 1.514 seconds (process running for 9634.162)
-2023-11-17T15:31:11.026+05:30  INFO 22792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-11-17T15:31:24.350+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 20436 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
-2023-11-17T15:31:24.367+05:30 DEBUG 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
-2023-11-17T15:31:24.375+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
-2023-11-17T15:31:24.924+05:30  INFO 20436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-17T15:31:24.925+05:30  INFO 20436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-17T15:31:30.302+05:30  INFO 20436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-17T15:31:30.644+05:30  INFO 20436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 266 ms. Found 3 JPA repository interfaces.
-2023-11-17T15:31:35.890+05:30  INFO 20436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-17T15:31:36.005+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-17T15:31:36.006+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-17T15:31:36.562+05:30  INFO 20436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-17T15:31:36.564+05:30  INFO 20436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11631 ms
-2023-11-17T15:31:37.003+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
-2023-11-17T15:31:38.971+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@93c2a5e
-2023-11-17T15:31:38.977+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
-2023-11-17T15:31:39.027+05:30  INFO 20436 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
-2023-11-17T15:31:42.363+05:30  INFO 20436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-17T15:31:43.126+05:30  INFO 20436 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
-2023-11-17T15:31:43.136+05:30  INFO 20436 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-17T15:31:43.738+05:30  INFO 20436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T15:31:44.265+05:30  INFO 20436 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-17T15:31:44.496+05:30  WARN 20436 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-11-17T15:31:45.344+05:30  INFO 20436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T15:31:47.210+05:30  INFO 20436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-11-17T15:31:47.407+05:30  INFO 20436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-17T15:31:48.178+05:30  INFO 20436 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-11-17T15:31:50.190+05:30  WARN 20436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-17T15:31:51.588+05:30  INFO 20436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-11-17T15:31:51.747+05:30  INFO 20436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-17T15:31:51.797+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 29.781 seconds (process running for 32.394)
-2023-11-17T15:31:56.011+05:30  INFO 20436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-17T15:31:56.012+05:30  INFO 20436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-17T15:31:56.015+05:30  INFO 20436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-11-17T15:31:56.584+05:30  INFO 20436 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received
-2023-11-17T15:31:56.586+05:30 DEBUG 20436 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received DEBUG
-2023-11-17T16:34:48.209+05:30  WARN 20436 --- [test housekeeper] com.zaxxer.hikari.pool.HikariPool        : test - Thread starvation or clock leap detected (housekeeper delta=59m39s39ms286µs700ns).
-2023-11-17T16:38:58.341+05:30  INFO 20436 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-11-17T16:38:58.397+05:30  INFO 20436 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-11-17T16:38:58.402+05:30  INFO 20436 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-11-17T16:38:58.420+05:30  INFO 20436 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-17T16:38:58.434+05:30  INFO 20436 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
-2023-11-17T16:38:58.478+05:30  INFO 20436 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
-2023-11-17T16:38:59.262+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 20436 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
-2023-11-17T16:38:59.264+05:30 DEBUG 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
-2023-11-17T16:38:59.266+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
-2023-11-17T16:39:01.357+05:30  INFO 20436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-17T16:39:01.487+05:30  INFO 20436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 3 JPA repository interfaces.
-2023-11-17T16:39:02.573+05:30  INFO 20436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-17T16:39:02.576+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-17T16:39:02.577+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-17T16:39:02.765+05:30  INFO 20436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-17T16:39:02.766+05:30  INFO 20436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3427 ms
-2023-11-17T16:39:02.912+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
-2023-11-17T16:39:02.984+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@33cb03eb
-2023-11-17T16:39:02.985+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
-2023-11-17T16:39:02.986+05:30  INFO 20436 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
-2023-11-17T16:39:03.296+05:30  INFO 20436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-17T16:39:03.443+05:30  INFO 20436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T16:39:03.444+05:30  INFO 20436 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-17T16:39:03.450+05:30  WARN 20436 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-11-17T16:39:03.589+05:30  INFO 20436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T16:39:04.245+05:30  INFO 20436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-11-17T16:39:04.354+05:30  INFO 20436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-17T16:39:04.397+05:30  WARN 20436 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorController' defined in file [C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes\com\api\book\controller\AuthorController.class]: Failed to instantiate [com.api.book.controller.AuthorController]: Constructor threw exception
-2023-11-17T16:39:04.397+05:30  INFO 20436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-17T16:39:04.399+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
-2023-11-17T16:39:04.425+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
-2023-11-17T16:39:04.429+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-11-17T16:39:04.455+05:30  INFO 20436 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-11-17T16:39:04.551+05:30 ERROR 20436 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorController' defined in file [C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes\com\api\book\controller\AuthorController.class]: Failed to instantiate [com.api.book.controller.AuthorController]: Constructor threw exception
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
-	at com.api.book.Bootjpaexample1Application.main(Bootjpaexample1Application.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.api.book.controller.AuthorController]: Constructor threw exception
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.10.jar:6.0.10]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.10.jar:6.0.10]
-	... 22 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "enum Identifier" to complete EnumHeader
-	Syntax error, insert "EnumBody" to complete EnumDeclaration
-
-	at com.api.book.controller.AuthorController.<init>(AuthorController.java:31) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.10.jar:6.0.10]
-	... 24 common frames omitted
-
-2023-11-17T16:42:56.673+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 20436 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
-2023-11-17T16:42:56.675+05:30 DEBUG 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
-2023-11-17T16:42:56.677+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
-2023-11-17T16:43:00.094+05:30  INFO 20436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-17T16:43:00.286+05:30  INFO 20436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 188 ms. Found 3 JPA repository interfaces.
-2023-11-17T16:43:00.652+05:30  INFO 20436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-17T16:43:00.661+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-17T16:43:00.662+05:30  INFO 20436 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-17T16:43:00.742+05:30  INFO 20436 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-11-17T16:43:00.743+05:30  INFO 20436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3770 ms
-2023-11-17T16:43:00.778+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
-2023-11-17T16:43:00.824+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9cbddb
-2023-11-17T16:43:00.825+05:30  INFO 20436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
-2023-11-17T16:43:00.825+05:30  INFO 20436 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
-2023-11-17T16:43:00.915+05:30  INFO 20436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-17T16:43:00.946+05:30  INFO 20436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T16:43:00.947+05:30  INFO 20436 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-17T16:43:00.953+05:30  WARN 20436 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-11-17T16:43:01.011+05:30  INFO 20436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-17T16:43:01.201+05:30  INFO 20436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-11-17T16:43:01.306+05:30  INFO 20436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-17T16:43:01.622+05:30  WARN 20436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-17T16:43:02.026+05:30  INFO 20436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-11-17T16:43:02.074+05:30  INFO 20436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-17T16:43:02.087+05:30  INFO 20436 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 5.773 seconds (process running for 4302.684)
-2023-11-17T16:43:02.095+05:30  INFO 20436 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-11T13:32:02.989+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 7612 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
+2023-12-11T13:32:03.009+05:30 DEBUG 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-12-11T13:32:03.013+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
+2023-12-11T13:32:03.238+05:30  INFO 7612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-11T13:32:03.239+05:30  INFO 7612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-11T13:32:05.659+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-11T13:32:05.852+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 5 JPA repository interfaces.
+2023-12-11T13:32:08.027+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-11T13:32:08.065+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-11T13:32:08.067+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-12-11T13:32:08.369+05:30  INFO 7612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-11T13:32:08.371+05:30  INFO 7612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5129 ms
+2023-12-11T13:32:08.688+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2023-12-11T13:32:10.099+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c4d30c4
+2023-12-11T13:32:10.106+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2023-12-11T13:32:10.149+05:30  INFO 7612 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
+2023-12-11T13:32:10.165+05:30  INFO 7612 --- [restartedMain] com.api.book.SimpleCORSFilter            : SimpleCORSFilter init
+2023-12-11T13:32:11.669+05:30  INFO 7612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-11T13:32:12.097+05:30  INFO 7612 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-12-11T13:32:12.124+05:30  INFO 7612 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-11T13:32:13.720+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:32:14.632+05:30  INFO 7612 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-11T13:32:14.867+05:30  WARN 7612 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-12-11T13:32:15.700+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:32:18.749+05:30  INFO 7612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-11T13:32:19.183+05:30  INFO 7612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:32:20.183+05:30  INFO 7612 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-11T13:32:22.888+05:30  WARN 7612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-11T13:32:24.428+05:30  INFO 7612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-11T13:32:24.552+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-11T13:32:24.586+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 23.478 seconds (process running for 28.176)
+2023-12-11T13:34:12.823+05:30  INFO 7612 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-11T13:34:12.897+05:30  INFO 7612 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-11T13:34:12.948+05:30  INFO 7612 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:34:12.966+05:30  INFO 7612 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2023-12-11T13:34:13.018+05:30  INFO 7612 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2023-12-11T13:34:13.290+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 7612 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
+2023-12-11T13:34:13.291+05:30 DEBUG 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-12-11T13:34:13.292+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
+2023-12-11T13:34:14.552+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-11T13:34:14.608+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2023-12-11T13:34:14.915+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-11T13:34:14.917+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-11T13:34:14.918+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-12-11T13:34:14.993+05:30  INFO 7612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-11T13:34:14.994+05:30  INFO 7612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2023-12-11T13:34:15.041+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2023-12-11T13:34:15.086+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@44260ca4
+2023-12-11T13:34:15.087+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2023-12-11T13:34:15.088+05:30  INFO 7612 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
+2023-12-11T13:34:15.097+05:30  INFO 7612 --- [restartedMain] com.api.book.SimpleCORSFilter            : SimpleCORSFilter init
+2023-12-11T13:34:15.174+05:30  INFO 7612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-11T13:34:15.204+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:34:15.204+05:30  INFO 7612 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-11T13:34:15.209+05:30  WARN 7612 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-12-11T13:34:15.286+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:34:15.515+05:30  INFO 7612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-11T13:34:15.690+05:30  INFO 7612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:34:16.147+05:30  WARN 7612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-11T13:34:16.982+05:30  INFO 7612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-11T13:34:17.042+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-11T13:34:17.061+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 3.886 seconds (process running for 140.651)
+2023-12-11T13:34:17.069+05:30  INFO 7612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-11T13:34:26.473+05:30  INFO 7612 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-11T13:34:26.508+05:30  INFO 7612 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-11T13:34:26.522+05:30  INFO 7612 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:34:26.524+05:30  INFO 7612 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2023-12-11T13:34:26.550+05:30  INFO 7612 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2023-12-11T13:34:26.913+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 7612 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
+2023-12-11T13:34:26.914+05:30 DEBUG 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-12-11T13:34:26.914+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
+2023-12-11T13:34:28.307+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-11T13:34:28.366+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2023-12-11T13:34:28.634+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-11T13:34:28.635+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-11T13:34:28.637+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-12-11T13:34:28.706+05:30  INFO 7612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-11T13:34:28.707+05:30  INFO 7612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1785 ms
+2023-12-11T13:34:28.753+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2023-12-11T13:34:28.793+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@5485712
+2023-12-11T13:34:28.794+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2023-12-11T13:34:28.795+05:30  INFO 7612 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
+2023-12-11T13:34:28.804+05:30  INFO 7612 --- [restartedMain] com.api.book.SimpleCORSFilter            : SimpleCORSFilter init
+2023-12-11T13:34:28.890+05:30  INFO 7612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-11T13:34:28.931+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:34:28.932+05:30  INFO 7612 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-11T13:34:28.936+05:30  WARN 7612 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-12-11T13:34:28.985+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:34:29.160+05:30  INFO 7612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-11T13:34:29.326+05:30  INFO 7612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:34:29.656+05:30  WARN 7612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-11T13:34:30.468+05:30  INFO 7612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-11T13:34:30.526+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-11T13:34:30.540+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 3.733 seconds (process running for 154.129)
+2023-12-11T13:34:30.551+05:30  INFO 7612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-11T13:35:23.632+05:30  INFO 7612 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-11T13:35:23.682+05:30  INFO 7612 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-11T13:35:23.715+05:30  INFO 7612 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:35:23.717+05:30  INFO 7612 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2023-12-11T13:35:23.739+05:30  INFO 7612 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2023-12-11T13:35:23.952+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 7612 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
+2023-12-11T13:35:23.953+05:30 DEBUG 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-12-11T13:35:23.953+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
+2023-12-11T13:35:25.308+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-11T13:35:25.368+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+2023-12-11T13:35:25.663+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-11T13:35:25.664+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-11T13:35:25.665+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-12-11T13:35:25.733+05:30  INFO 7612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-11T13:35:25.734+05:30  INFO 7612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1776 ms
+2023-12-11T13:35:25.781+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2023-12-11T13:35:25.823+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f72af74
+2023-12-11T13:35:25.824+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2023-12-11T13:35:25.825+05:30  INFO 7612 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
+2023-12-11T13:35:25.834+05:30  INFO 7612 --- [restartedMain] com.api.book.SimpleCORSFilter            : SimpleCORSFilter init
+2023-12-11T13:35:25.912+05:30  INFO 7612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-11T13:35:25.950+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:35:25.950+05:30  INFO 7612 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-11T13:35:25.955+05:30  WARN 7612 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-12-11T13:35:26.022+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:35:26.239+05:30  INFO 7612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-11T13:35:26.666+05:30  INFO 7612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:35:27.137+05:30  WARN 7612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-11T13:35:27.617+05:30  INFO 7612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-11T13:35:27.716+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-11T13:35:27.737+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 3.861 seconds (process running for 211.327)
+2023-12-11T13:35:27.743+05:30  INFO 7612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-11T13:36:45.292+05:30  INFO 7612 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-11T13:36:45.355+05:30  INFO 7612 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-11T13:36:45.407+05:30  INFO 7612 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:36:45.410+05:30  INFO 7612 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : test - Shutdown initiated...
+2023-12-11T13:36:45.437+05:30  INFO 7612 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : test - Shutdown completed.
+2023-12-11T13:36:46.002+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Starting Bootjpaexample1Application using Java 17.0.7 with PID 7612 (C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi\target\classes started by SHREYA in C:\Users\SHREYA\Desktop\Study Material\Springboot Tutorial\restapi)
+2023-12-11T13:36:46.006+05:30 DEBUG 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-12-11T13:36:46.009+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : No active profile set, falling back to 1 default profile: "default"
+2023-12-11T13:36:47.974+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-11T13:36:48.161+05:30  INFO 7612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185 ms. Found 5 JPA repository interfaces.
+2023-12-11T13:36:48.570+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-11T13:36:48.571+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-11T13:36:48.573+05:30  INFO 7612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-12-11T13:36:48.655+05:30  INFO 7612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-11T13:36:48.655+05:30  INFO 7612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2601 ms
+2023-12-11T13:36:48.710+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Starting...
+2023-12-11T13:36:48.760+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : test - Added connection com.mysql.cj.jdbc.ConnectionImpl@2105ed08
+2023-12-11T13:36:48.761+05:30  INFO 7612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : test - Start completed.
+2023-12-11T13:36:48.762+05:30  INFO 7612 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/test?serverTimezone=UTC'
+2023-12-11T13:36:48.770+05:30  INFO 7612 --- [restartedMain] com.api.book.SimpleCORSFilter            : SimpleCORSFilter init
+2023-12-11T13:36:48.865+05:30  INFO 7612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-11T13:36:48.900+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:36:48.901+05:30  INFO 7612 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-11T13:36:48.905+05:30  WARN 7612 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-12-11T13:36:48.977+05:30  INFO 7612 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-11T13:36:49.135+05:30  INFO 7612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-11T13:36:49.300+05:30  INFO 7612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-11T13:36:49.679+05:30  WARN 7612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-11T13:36:50.019+05:30  INFO 7612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-11T13:36:50.073+05:30  INFO 7612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-11T13:36:50.093+05:30  INFO 7612 --- [restartedMain] c.api.book.Bootjpaexample1Application    : Started Bootjpaexample1Application in 4.349 seconds (process running for 293.682)
+2023-12-11T13:36:50.100+05:30  INFO 7612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-11T13:37:52.784+05:30  INFO 7612 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-11T13:37:52.787+05:30  INFO 7612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-11T13:37:52.796+05:30  INFO 7612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-12-11T13:37:54.143+05:30  INFO 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:37:54.144+05:30 DEBUG 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:42:08.614+05:30  INFO 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:42:08.615+05:30 DEBUG 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:42:41.165+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:42:41.166+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:42:47.855+05:30  INFO 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:42:47.856+05:30 DEBUG 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:43:18.223+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:43:18.223+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:43:25.792+05:30  INFO 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:43:25.792+05:30 DEBUG 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:43:31.051+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:43:31.052+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:44:23.979+05:30  INFO 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:44:23.980+05:30 DEBUG 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:52:24.119+05:30  INFO 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:52:24.120+05:30 DEBUG 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:54:01.256+05:30  INFO 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:54:01.257+05:30 DEBUG 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:54:48.364+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:54:48.365+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:55:52.901+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:55:52.902+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:57:00.286+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:57:00.286+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:57:18.036+05:30  INFO 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:57:18.037+05:30 DEBUG 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:57:26.717+05:30  INFO 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:57:26.717+05:30 DEBUG 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:57:46.030+05:30  INFO 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:57:46.031+05:30 DEBUG 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:59:47.229+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:59:47.230+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T13:59:51.616+05:30  INFO 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received
+2023-12-11T13:59:51.616+05:30 DEBUG 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:00:34.089+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:00:34.090+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:01:03.986+05:30  INFO 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:01:03.987+05:30 DEBUG 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:01:14.194+05:30  INFO 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:01:14.194+05:30 DEBUG 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:01:25.089+05:30  INFO 7612 --- [http-nio-8080-exec-4] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:01:25.089+05:30 DEBUG 7612 --- [http-nio-8080-exec-4] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:02:52.404+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:02:52.405+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:03:13.867+05:30  INFO 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:03:13.868+05:30 DEBUG 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:03:55.641+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:03:55.642+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:06:00.538+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:06:00.539+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:06:13.899+05:30  INFO 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:06:13.899+05:30 DEBUG 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:08:49.074+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:08:49.076+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:09:30.713+05:30  INFO 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:09:30.714+05:30 DEBUG 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:09:38.663+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:09:38.663+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:09:49.517+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:09:49.518+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:10:12.664+05:30  INFO 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:10:12.664+05:30 DEBUG 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:10:17.027+05:30  INFO 7612 --- [http-nio-8080-exec-4] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:10:17.027+05:30 DEBUG 7612 --- [http-nio-8080-exec-4] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:10:23.509+05:30  INFO 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:10:23.510+05:30 DEBUG 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:10:50.851+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:10:50.853+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T14:12:38.297+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T14:12:38.297+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:07:07.246+05:30  INFO 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:07:07.247+05:30 DEBUG 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:10:56.840+05:30  INFO 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:10:56.841+05:30 DEBUG 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:11:01.293+05:30  INFO 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:11:01.293+05:30 DEBUG 7612 --- [http-nio-8080-exec-10] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:11:05.526+05:30  INFO 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:11:05.526+05:30 DEBUG 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:11:33.775+05:30  INFO 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:11:33.776+05:30 DEBUG 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:11:43.296+05:30  INFO 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:11:43.296+05:30 DEBUG 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:13:12.317+05:30  INFO 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:13:12.317+05:30 DEBUG 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:13:18.071+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:13:18.071+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:13:23.186+05:30  INFO 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:13:23.186+05:30 DEBUG 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:13:27.744+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:13:27.744+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:24:37.537+05:30  INFO 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:24:37.538+05:30 DEBUG 7612 --- [http-nio-8080-exec-5] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:24:59.133+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:24:59.133+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:25:04.356+05:30  INFO 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:25:04.357+05:30 DEBUG 7612 --- [http-nio-8080-exec-7] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:25:06.246+05:30  INFO 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:25:06.246+05:30 DEBUG 7612 --- [http-nio-8080-exec-8] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:25:09.194+05:30  INFO 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:25:09.194+05:30 DEBUG 7612 --- [http-nio-8080-exec-9] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:25:16.246+05:30  INFO 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:25:16.246+05:30 DEBUG 7612 --- [http-nio-8080-exec-1] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:26:15.982+05:30  INFO 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:26:15.982+05:30 DEBUG 7612 --- [http-nio-8080-exec-2] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:26:32.792+05:30  INFO 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:26:32.792+05:30 DEBUG 7612 --- [http-nio-8080-exec-3] com.api.book.controller.BookController   : getAll request received DEBUG
+2023-12-11T15:28:48.768+05:30  WARN 7612 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.api.book.exception.CustomException: This author does not have any books]
+2023-12-11T15:28:52.873+05:30  INFO 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received
+2023-12-11T15:28:52.873+05:30 DEBUG 7612 --- [http-nio-8080-exec-6] com.api.book.controller.BookController   : getAll request received DEBUG

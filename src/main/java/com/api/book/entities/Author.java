@@ -9,7 +9,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "authors")
 public class Author {
@@ -24,7 +28,7 @@ public class Author {
 	@Column(name = "last_name")
 	private String lastName;
 
-//	@Transient
+	// @Transient
 //	private String fullName;
 
 //	@OneToMany(mappedBy = "author")
@@ -47,41 +51,18 @@ public class Author {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Author(String firstName, String lastName) {
+	public Author(String firstName, String lastName, Address address) {
 		super();
 //		this.authorId = authorId;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.setAddress(address);
 //		this.fullName = firstName + " " + lastName;
 	}
 
 	@Override
 	public String toString() {
 		return "Author [authorId =" + authorId + ", fullName = " + " ]";
-	}
-
-	public int getAuthorId() {
-		return authorId;
-	}
-
-	public void setAuthorId(int authorId) {
-		this.authorId = authorId;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
 	}
 
 }
